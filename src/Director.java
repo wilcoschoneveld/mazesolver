@@ -247,7 +247,8 @@ public class Director {
             
             writer.write(length + order.length - 2 + ";");
             writer.newLine();
-            
+
+            // No start point for Grand Challenge!
 //            writer.write(
 //                    maze.getStartPoint().getX() + ","
 //                    + maze.getStartPoint().getY() + ";");
