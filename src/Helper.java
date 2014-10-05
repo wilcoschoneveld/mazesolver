@@ -202,13 +202,12 @@ public class Helper {
      * @param path
      * @param maze
      */
-    
     public static void optimizePath(ArrayList<Point> path, Maze maze) {
         // Nothing to do here if no path!
         if(path == null || path.size() < 2) return;
         
         // Create a stepMap
-        int[][] map = mapPath(path, maze.getHeight(), maze.getWidth());
+        int[][] map = mapPath(path, maze.getWidth(), maze.getHeight());
         
         // Copy the path into oldPath
         ArrayList<Point> oldPath = new ArrayList<>(path);
